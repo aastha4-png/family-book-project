@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Family book</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" id="img">
+        <button id="next" onclick="update()">Next</button>
+        <h4 id="4"></h4>
+        <script>
+            var images=[
+                "https://i.pinimg.com/originals/36/e6/26/36e626495c7d1c6f380d5a7bb0c873de.jpg",
+                "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX36150692.jpg",
+                "https://previews.123rf.com/images/summersun/summersun1205/summersun120500006/13749461-cartoon-school-boy-with-book-smiling-and-waving-isolated-on-white.jpg",
+                "https://lh3.googleusercontent.com/proxy/ZAvTfoXsbgz_YFvvwQIHOhkAi93n483jL5aWSdQvbicA29Sq1Pk1wkKFok5KRMh-gQQGmBJTgZlHgOu9eNdsyaiIhQ0mYmo"
+            ]
+            var names=[
+                "Malchand Agarwal",
+                "Nitin Agarwal",
+                "Vaidik Agarwal",
+                "Aastha Agarwal"
+            ]
+
+            var i=0;
+function update(){
+    i++;
+    var family_member=14
+    if(i>family_member)
+    {
+        i=0;
+    }
+    var updated_image=images[i];
+    var updated_name=names[i];
+    document.getElementById("img").src=updated_image;
+    document.getElementById("4").innerHTML=updated_name;
+}
+        </script>
+    </body>
+</html>
